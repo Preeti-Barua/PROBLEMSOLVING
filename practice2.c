@@ -23,9 +23,21 @@ int main()
 	  	break;
 	  }
 	  ---------------------
-	  */
+	  
 	  int i=5, j=6,z;
 	  printf("%d", ++i  +  --j);
+	  
+	
+
+             printf("\nab");
+	        printf("\bsi");                //backspace (/b)
+	         printf("\rvbnh");
+	         */
+	         
+	         int arr[1]={10};
+	         printf("%d",0[arr]);
+	         return 0;
+
 }
 
 
