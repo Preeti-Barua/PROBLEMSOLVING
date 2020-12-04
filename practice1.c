@@ -1,23 +1,21 @@
-  /*
-    #include <stdio.h>
-    int main()
-    {
-        int a = 0, i = 0, b;
-        for (i = 0;i < 5; i++)
-        {
-            a++;
-            if (i == 3)
-                break;
-        }
-    }
-    */
-    
-    
-    #include<stdio.h>
-main()
+#include<stdio.h>
+#include<conio.h>
+int main()
 {
-   // typedef int a;
-    int a ,b=2, c=8, d;
-    d=(b*2)/2+8;
-    printf("%d",d);
+	   int i,res;
+	   scanf("%d",&i);
+	   
+	   res=i*i;
+	   int a=res%10;
+	   
+	   if(a==i)
+	   {
+	   	printf("Automorphic number");
+	   }
+	   else
+	   {
+	   	
+	   	printf("not Automorphic number");
+	   }
+	   
 }
