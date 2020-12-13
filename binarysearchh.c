@@ -3,11 +3,11 @@
 
 binarysearchh(int A[],int n,int x)
 {
-	           int f=A[0];
-	           int l=A[n-1];
-	           while (f<=l)
+	           int low=0;
+	           int high=n-1;
+	           while (low<=high)
 	           {
-	           	   int mid= (f+l)/2;
+	           	   int mid= (low+high)/2;
 	           	   
 	           	   
 	           	   if(A[mid]==x)
@@ -16,13 +16,13 @@ binarysearchh(int A[],int n,int x)
 					}
 				   else if(x < A[mid])
 				   {
-				   	       l=mid-1;
+				   	       high=mid-1;
 				   }
 				   else
 				   {
-				   	    f=mid+1;
+				   	    low=mid+1;
 				    }
-				      return -1;
+				      
 			   }
 			 
 	     return -1;      
@@ -36,7 +36,7 @@ int  main()
 	           	scanf("%d",&x);
 	           	int q= binarysearchh(A,n,x);
 	           	
-	           	if(q==1)
+	           	if(q!=-1)
 	           	{
 	           		printf("element found");
 				}
