@@ -1,6 +1,7 @@
 import java.util.Scanner;
 public class QueueattheSchool
 {
+    //https://codeforces.com/problemset/problem/266/B
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
